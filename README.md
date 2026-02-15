@@ -110,6 +110,46 @@ Visit http://localhost:3000 to see your API requests visualized in real-time!
 - 📊 **Monitor Third-party APIs**: Track external API usage and performance
 - 🤖 **Get AI Recommendations**: Receive intelligent optimization suggestions
 
+## Demo
+
+Run the included demo script to see it in action:
+
+```bash
+# Terminal 1: Start proxy
+bun run proxy
+
+# Terminal 2: Start dashboard
+bun dev
+
+# Terminal 3: Run demo
+./demo.sh
+```
+
+The demo will send sample API requests through the proxy, and you'll see them appear in real-time on the dashboard at http://localhost:3000.
+
+## Key Features Explained
+
+### Real-time Request Monitoring
+All requests proxied through port 8080 appear instantly in the dashboard with:
+- Method, path, status code, and response time
+- Color-coded status indicators (green for success, red for errors, yellow for in-progress)
+- Live statistics: total requests, average response time, success rate
+
+### Flow Visualization
+Visual representation using canvas-based rendering:
+- Nodes represent API endpoints grouped by path
+- Node size and color indicate request volume and health
+- Red nodes = errors detected
+- Orange nodes = slow responses (>1000ms)
+- Green nodes = healthy performance
+
+### AI-Powered Insights
+Click "Analyze" to get Claude AI's analysis of your API patterns:
+- Performance bottleneck identification
+- Error pattern detection
+- Optimization recommendations
+- Best practices suggestions
+
 ## License
 
 MIT

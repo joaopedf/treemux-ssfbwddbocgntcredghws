@@ -1,0 +1,3 @@
+# API Flow Visualizer
+
+**Debugging complex API interactions is painful.** Developers waste hours buried in network tabs, scattered logs, and guess-and-check optimizations. **API Flow Visualizer solves this** by providing a real-time visual dashboard that captures, visualizes, and analyzes API request flows with AI-powered insights. Simply route your traffic through the proxy, and instantly see performance bottlenecks, error patterns, and optimization opportunities in a beautiful interactive interface. **What makes it unique**: it combines transparent HTTP proxying, real-time WebSocket streaming, visual DAG flow representation, and Claude AI analysis into one cohesive developer tool - making API debugging as simple as opening a dashboard and pressing "Analyze."
