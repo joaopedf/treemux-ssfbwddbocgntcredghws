@@ -7,6 +7,7 @@ import { useState, useEffect } from "react"
 import FlowVisualization from "@/components/flow-visualization"
 import ProxySettings from "@/components/proxy-settings"
 import RequestsList from "@/components/requests-list"
+import AIInsights from "@/components/ai-insights"
 
 export default function Home() {
   const [isConnected, setIsConnected] = useState(false)
@@ -131,6 +132,11 @@ export default function Home() {
               <FlowVisualization requests={requests} />
             </CardContent>
           </Card>
+
+          {/* AI Insights */}
+          <div className="md:col-span-2">
+            <AIInsights requests={requests} />
+          </div>
 
           {/* Proxy Settings */}
           <Card>
